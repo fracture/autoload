@@ -1,8 +1,8 @@
 <?php
 
-    namespace Fracture\Autoload;
+namespace Fracture\Autoload;
 
-    interface Searchable
-    {
-        public function getLocations( $className );
-    }
+interface Searchable
+{
+    public function getLocations($className);
+}

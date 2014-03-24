@@ -55,7 +55,7 @@
 
         public function provide_Adding_of_Paths()
         {
-            return include FIXTURE_PATH . '/autoload/node-paths.php';
+            return include FIXTURE_PATH . '/node-paths.php';
         }
 
 
@@ -116,7 +116,7 @@
 
         public function provide_Child_Addition_with_Parent_Namespace()
         {
-            return include FIXTURE_PATH . '/autoload/node-namespaces.php';
+            return include FIXTURE_PATH . '/node-namespaces.php';
         }
 
 
@@ -140,7 +140,7 @@
 
         public function provide_Check_if_Child_Exists()
         {
-            return include FIXTURE_PATH . '/autoload/node-children.php';
+            return include FIXTURE_PATH . '/node-children.php';
         }
 
 

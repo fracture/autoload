@@ -36,7 +36,7 @@
 
         public function simple_Import_Provider()
         {
-            return include FIXTURE_PATH . '/autoload/imports-simple.php';
+            return include FIXTURE_PATH . '/imports-simple.php';
         }
 
     }

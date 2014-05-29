@@ -12,6 +12,7 @@
             'class' => 'Foo\\Class',
             'result' => [
                 '/path/to/foo/bar/class.php',
+                '/path/to/foo/class.php',
             ],
         ],
 
@@ -23,6 +24,7 @@
             'class' => 'Foo\\Class',
             'result' => [
                 '/path/to/foo/bar/class.php',
+                '/path/to/foo/class.php',
             ],
         ],
 
@@ -33,6 +35,7 @@
             'path' => '/path/to',
             'class' => 'Foo\\Bar\\Class',
             'result' => [
+                '/path/to/foo/bar/class.php',
                 '/path/to/foo/bar/class.php',
             ],
         ],
@@ -45,6 +48,7 @@
             'class' => 'Foo\\Class',
             'result' => [
                 'D:/path/to/foo/bar/class.php',
+                'D:/path/to/foo/class.php',
             ],
         ],
 
@@ -62,6 +66,7 @@
             'class' => 'Foo\\Bar\\Class',
             'result' => [
                 'D:/path/to/test/class.php',
+                'D:/path/to/foo/bar/class.php',
             ],
         ],
 
@@ -81,6 +86,7 @@
             'result' => [
                 'D:/path/to/first/class.php',
                 'D:/path/to/second/class.php',
+                'D:/path/to/foo/bar/class.php',
             ],
         ],
 
@@ -100,6 +106,7 @@
             'class' => 'Foo\\Bar',
             'result' => [
                 'D:/path/to/foo/location/bar.php',
+                'D:/path/to/foo/bar.php',
             ],
         ],
 
@@ -124,6 +131,7 @@
             'class' => 'Foo\\Unknown\\Bar',
             'result' => [
                 '/path/to/foo/location/unknown/bar.php',
+                '/path/to/foo/unknown/bar.php',
             ],
         ],
 
@@ -148,6 +156,7 @@
             'class' => 'Foo\\Empty\\Bar',
             'result' => [
                 '/path/to/foo/location/empty/bar.php',
+                '/path/to/foo/empty/bar.php',
             ],
         ],
 
@@ -174,6 +183,16 @@
                 '/path/to/first/class.php',
                 '/path/to/second/class.php',
                 '/path/to/third/location/class.php',
+                '/path/to/foo/empty/bar/class.php',
+            ],
+        ],
+
+        [
+            'config' => [],
+            'path' => '/path/to',
+            'class' => 'Foo',
+            'result' => [
+                '/path/to/foo.php',
             ],
         ],
 

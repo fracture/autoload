@@ -14,20 +14,17 @@
          verbose="false">
 
     <testsuites>
-        <testsuite name="Core Framework">
-            <directory>./unit/lib/fracture</directory>
+        <testsuite name="Unit-Tests">
+            <directory>./unit</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory suffix=".php">../src/</directory>
+            <directory suffix=".php">../src/Fracture</directory>
             <exclude>
-                <file>../src/public/index.php</file>
-                <file>../src/application/bootstrap.php</file>
-                <file>../src/lib/fracture/autoload/classloader.php</file>
-                <file>../src/lib/fracture/autoload/searchable.php</file>
-                <file>../src/lib/fracture/routing/matchable.php</file>
+                <file>../src/Fracture/Autoload/ClassLoader.php</file>
+                <file>../src/Fracture/Autoload/Searchable.php</file>
             </exclude>
         </whitelist>
     </filter>

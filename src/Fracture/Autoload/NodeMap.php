@@ -120,6 +120,8 @@ class NodeMap implements Searchable
             return $element . '/' . $leftover . '.php';
         }, $paths);
 
+        $paths[] = $this->cleanedPath($className) . '.php';
+
         return $paths;
     }
 

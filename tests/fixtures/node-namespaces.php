@@ -4,18 +4,18 @@
         [
             'namespace' => 'foo',
             'name' => 'bar',
-            'result' => 'foo\\bar',
+            'result' => 'foo\bar',
         ],
 
         [
             'namespace' => 'Foo',
             'name' => 'Bar',
-            'result' => 'Foo\\Bar',
+            'result' => 'Foo\Bar',
         ],
 
         [
-            'namespace' => 'foo\\bar',
+            'namespace' => 'foo\bar',
             'name' => 'buz',
-            'result' => 'foo\\bar\\buz',
+            'result' => 'foo\bar\buz',
         ],
     ];
